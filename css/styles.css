@@ -49,3 +49,66 @@ header form input {
   background-color: #f6f7f9;
   outline: none;
 }
+
+header form ion-icon::placeholder{
+  color: #b4b8bb;
+  font-family: 'Raleway',sans-serif;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+
+header form ion-icon{
+  position: absolute;
+  padding-left: 20px;
+  color: #b4b8bb;
+  font-size: 1.1em;
+
+}
+
+header .a-btn a {
+  display: inline;
+  text-decoration: none;
+  margin-left: 5px;
+  padding: 14px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  color: black;
+}
+
+header .a-btn a:hover {
+  border: 1px solid #ebebeb
+}
+
+header ul{
+  display: flex;
+  position: relative;
+  top: 6px;
+}
+
+header ul li{
+  list-style: none;
+  margin-left: 30px;
+}
+
+header ul li a {
+  font-size: 1.6em;
+  display: block;
+  position: relative;
+}
+
+header ul li a span {
+  font-size: 0.6em;
+  display: flex;
+  position: absolute;
+  color: white;
+  background-color: #ff5722;
+  width: 16px;
+  height: 16px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  z-index: +2;
+  left: 16px;
+  bottom: 18px;
+}
