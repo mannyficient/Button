@@ -72,6 +72,7 @@ header .a-btn a {
   border-radius: 50px;
   font-weight: 600;
   color: black;
+  border: 1px solid transparent;
 }
 
 header .a-btn a:hover {
@@ -199,11 +200,12 @@ header ul li a span {
 .grp-box::before {
   content: "";
   position: absolute;
+  height: 215px;
   left: 0;
   right: 0;
   bottom: -60px;
+  z-index: +2;
   background-color: green;
-  height: 200px;
   transform: skewY(-20deg);
   border-radius: 12px;
 }
@@ -265,4 +267,62 @@ header ul li a span {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.grp-box:nth-child(1).grp-box::before {
+  background-color: #ff8965;
+}
+.grp-box:nth-child(2).grp-box::before {
+  background-color: #f15c7f;
+}
+.grp-box:nth-child(3).grp-box::before {
+  background-color: #27bb97;
+}
+.grp-box:nth-child(4).grp-box::before {
+  background: linear-gradient(45deg, #5f21c1, #b271ff);
+}
+
+.grp-box:nth-child(1) {
+  box-shadow: 0px 30px 20px -30px #ff8965;
+}
+.grp-box:nth-child(2) {
+  box-shadow: 0px 30px 20px -30px #f15c7f;
+}
+.grp-box:nth-child(3) {
+  box-shadow: 0px 30px 20px -30px #27bb97;
+}
+.grp-box:nth-child(4) {
+  box-shadow: 0px 30px 20px -30px #b271ff;
+}
+
+.stack {
+  height: 100%;
+  position: absolute;
+}
+
+.stack::before {
+  content: "";
+  position: absolute;
+  height: 215px;
+  left: 0;
+  right: 0;
+  background-color: green;
+  transform: skewY(-20deg);
+  border-radius: 12px;
+}
+
+.stack.one {
+  width: 94%;
+}
+.stack.one::before {
+  bottom: -52px;
+  background-color: #2bbd99;
+}
+.stack.two {
+  width: 88%;
+}
+.stack.two::before {
+  bottom: -44px;
+  background-color: #526fda;
+  z-index: -1;
 }
