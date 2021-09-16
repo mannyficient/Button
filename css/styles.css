@@ -1,18 +1,18 @@
 body {
   background-color: #f6f7f9;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
-.wrapper{
+.wrapper {
   max-width: 1200px;
   margin: 0 auto;
 }
-header{
+header {
   background-color: white;
   border-bottom: 1px solid #ebebeb;
 }
 
-header .wrapper{
+header .wrapper {
   padding: 30px 10px;
   overflow: hidden;
   display: flex;
@@ -20,18 +20,18 @@ header .wrapper{
   justify-content: space-between;
 }
 
-.logo a{
+.logo a {
   display: block;
   margin-left: 10px;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: 'Fredoka One',cursive;
+  font-family: "Fredoka One", cursive;
   font-size: 1.8em;
   color: #ab47bc;
 }
 
 .logo a span {
-color: #673ab7;
+  color: #673ab7;
 }
 
 header form {
@@ -43,27 +43,25 @@ header form {
 header form input {
   padding: 12px 12px 12px 50px;
   width: 500px;
-  height: 20px;
+  height: 24px;
   border-radius: 50px;
   border: none;
   background-color: #f6f7f9;
   outline: none;
 }
 
-header form ion-icon::placeholder{
+header form ion-icon::placeholder {
   color: #b4b8bb;
-  font-family: 'Raleway',sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 1.1em;
   font-weight: 600;
 }
 
-
-header form ion-icon{
+header form ion-icon {
   position: absolute;
   padding-left: 20px;
   color: #b4b8bb;
   font-size: 1.1em;
-
 }
 
 header .a-btn a {
@@ -77,16 +75,16 @@ header .a-btn a {
 }
 
 header .a-btn a:hover {
-  border: 1px solid #ebebeb
+  border: 1px solid #ebebeb;
 }
 
-header ul{
+header ul {
   display: flex;
   position: relative;
   top: 6px;
 }
 
-header ul li{
+header ul li {
   list-style: none;
   margin-left: 30px;
 }
@@ -112,5 +110,159 @@ header ul li a span {
   left: 16px;
   bottom: 18px;
   border: 1px solid #ebebeb;
+}
 
+/* --------------------------------- */
+/* SECTION 1 main */
+/* -------------------------------- */
+
+.slider {
+  position: relative;
+  height: 480px;
+  padding: 50px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider .main-slider {
+  position: relative;
+  width: 64%;
+  height: inherit;
+  background-color: #1e88e5;
+  border-radius: 10px;
+  padding: 60px 60px;
+  box-sizing: border-box;
+  color: white;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0px 50px 450px -450px #1e88e5;
+}
+
+.main-slider-content p {
+  font-size: 1.6em;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.493);
+}
+
+.main-slider-content h1 {
+  font-size: 4.5em;
+  font-weight: 800;
+  margin: 10px 0px 40px 0px;
+  line-height: 1.2;
+}
+
+.btn {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  display: inline-flex;
+  align-items: center;
+  border: 2px solid #ebebeb;
+  border-radius: 50px;
+  padding: 14px 28px;
+}
+
+.btn span {
+  margin-right: 10px;
+}
+
+.controller-pic {
+  position: absolute;
+  left: 400px;
+  top: -90px;
+}
+
+.controller-pic img {
+  width: 650px;
+}
+
+/* --------------------------------- */
+/* SECTION 1 group */
+/* -------------------------------- */
+.slider .groupings {
+  width: 34%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.grp-box {
+  position: relative;
+  height: 47%;
+  width: 47%;
+  overflow: hidden;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+}
+.grp-box::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -60px;
+  background-color: green;
+  height: 200px;
+  transform: skewY(-20deg);
+  border-radius: 12px;
+}
+
+.grp-box .grp_box-img {
+  width: 155px;
+  height: 150px;
+  background-color: red;
+  z-index: +3;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.grp-box .grp_box-img img {
+  width: inherit;
+  height: 100%;
+  object-fit: cover;
+}
+
+.grp-box .grp_box-info {
+  position: absolute;
+  z-index: +4;
+  bottom: 18px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 20px;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  line-height: 1;
+}
+
+.grp-box .grp_box-info a {
+  color: white;
+}
+.grp-box .grp_box-info .grp_box-link a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+.grp-box .grp_box-info .grp_box-link p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9em;
+  font-weight: 600;
+  color: rgb(255 255 255/65%);
+}
+
+.grp-box .grp_box-info .grp_box-nav a {
+  background-color: rgb(0 0 0/10%);
+  padding: 8px;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
