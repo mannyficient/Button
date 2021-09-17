@@ -326,3 +326,30 @@ header ul li a span {
   background-color: #526fda;
   z-index: -1;
 }
+
+/*  */
+/* SECTION 2 */
+/* PRODUCT */
+
+.products {
+  position: relative;
+  padding: 20px 0px 60px 0px;
+}
+.products h2.title {
+  font-size: 2.6em;
+  margin-bottom: 30px;
+}
+
+.products .filter {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.products .filter .btn-filter {
+  display: inline-block;
+  background-color: white;
+  border: 1px solid #ebebeb;
+  border-radius: 50px;
+  padding: 4px;
+}
